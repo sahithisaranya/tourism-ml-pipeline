@@ -1,0 +1,14 @@
+artifact_uri: file:///content/tourism-ml-pipeline/mlruns/237302121250047560/e9fce9c90d40414d953e3a155304f367/artifacts
+end_time: 1759510018847
+entry_point_name: ''
+experiment_id: '237302121250047560'
+lifecycle_stage: active
+run_id: e9fce9c90d40414d953e3a155304f367
+run_name: xgb_best
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1759510014102
+status: 3
+tags: []
+user_id: root

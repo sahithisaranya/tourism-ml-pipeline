@@ -1,0 +1,6 @@
+artifact_location: file:///content/tourism-ml-pipeline/mlruns/237302121250047560
+creation_time: 1759510014097
+experiment_id: '237302121250047560'
+last_update_time: 1759510014097
+lifecycle_stage: active
+name: tourism_xgb_experiment
