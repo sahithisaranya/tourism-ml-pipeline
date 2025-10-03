@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Dependencies
-        run: pip install pandas scikit-learn datasets huggingface_hub
+        run: pip install pandas scikit-learn==1.6.1 datasets huggingface_hub
       - name: Run Data Preparation
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Dependencies
-        run: pip install pandas scikit-learn xgboost mlflow joblib huggingface_hub scipy numpy datasets
+        run: pip install pandas scikit-learn==1.6.1 xgboost mlflow joblib huggingface_hub scipy numpy datasets
       - name: Start MLflow Server
         run: |
           nohup mlflow ui --host 0.0.0.0 --port 5000 &
@@ -52,7 +52,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install Dependencies
-        run: pip install streamlit scikit-learn xgboost joblib pandas numpy datasets mlflow huggingface_hub scipy
+        run: pip install streamlit scikit-learn==1.6.1 xgboost joblib pandas numpy datasets mlflow huggingface_hub scipy
       - name: Push files to Frontend Hugging Face Space
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
